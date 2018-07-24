@@ -65,6 +65,17 @@ d3.json("flare.json", function(error, root) {
       .text(function(d) { return d.data.name.substring(0, d.r / 3); });
 });
 
+/* var click: 0;
+click: click
+
+.on('click', function(d) {
+    d.click ++;
+    if ((d.click)%4 == 0 ) { d3.select(this).style("fill","#fff"); }
+	   if ((d.click)%4 == 1 ) { d3.select(this).style("fill","#2C93E8"); }
+	   if ((d.click)%4 == 2 ) { d3.select(this).style("fill","#F56C4E"); }
+	   if ((d.click)%4 == 3 ) { d3.select(this).style("fill","#838690"); }
+ }) */
+
 </script>
 
 
