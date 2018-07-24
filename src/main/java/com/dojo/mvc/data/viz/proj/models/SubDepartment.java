@@ -23,7 +23,7 @@ public class SubDepartment {
 	private Long id;
 	
 	private String name;
-	
+	private String subNo;
 	@ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="department_id")
     private Department department;
@@ -47,6 +47,14 @@ public class SubDepartment {
 		this.id = id;
 	}
 
+	public String getSubNo() {
+		return subNo;
+	}
+
+	public void setSubNo(String subNo) {
+		this.subNo = subNo;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -70,7 +78,10 @@ public class SubDepartment {
 	public void setBrands(List<Brand> brands) {
 		this.brands = brands;
 	}
-
+	
+	public void addBrand(Brand brand) {
+		this.brands.add(brand);
+	}
 	
 
 }

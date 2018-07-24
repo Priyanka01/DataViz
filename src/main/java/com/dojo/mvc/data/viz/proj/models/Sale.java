@@ -33,8 +33,18 @@ public class Sale {
     )
 	private List<Brand> brands;
 	
-	public Sale() {}
+	public Sale() {
+		
+	}
 	
+	public Sale(String sku_number, String name, Integer quantity, Double amount) {
+		this.sku_number = sku_number;
+		this.name = name;
+		this.quantity = quantity;
+		this.amount = amount;
+
+	}
+
 	public Long getId() {
 		return id;
 	}
@@ -92,6 +102,9 @@ public class Sale {
 
 	public void setBrands(List<Brand> brands) {
 		this.brands = brands;
+	}
+	public void addBrand(Brand brand) {
+		this.brands.add(brand);
 	}
 
 

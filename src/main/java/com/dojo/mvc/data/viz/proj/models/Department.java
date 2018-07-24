@@ -42,11 +42,11 @@ public class Department {
 		this.name = name;
 	}
 
-	public String getDept_no() {
+	public String getDeptNo() {
 		return dept_no;
 	}
 
-	public void setDept_no(String dept_no) {
+	public void setDeptNo(String dept_no) {
 		this.dept_no = dept_no;
 	}
 
@@ -56,6 +56,10 @@ public class Department {
 
 	public void setSub_depts(List<SubDepartment> sub_depts) {
 		this.sub_depts = sub_depts;
+	}
+	
+	public void addSubDept(SubDepartment sub) {
+		this.sub_depts.add(sub);
 	}
 
 }
