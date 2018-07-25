@@ -1,6 +1,7 @@
 package com.dojo.mvc.data.viz.proj.controllers;
 
 import java.io.IOException;
+import java.io.StringWriter;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,25 +23,44 @@ public class UploadFile {
 	
 	@RequestMapping("/load")
 	public String uploadOneFile() {
+//		UniversalService.createJSON(true);
 		return "/views/index.jsp";
 	}
+//	
+//	@RequestMapping("/loadClickable")
+//	public String uploadFile() {
+//		return "/views/Clickable.jsp";
+//	}
+//	
+//	@RequestMapping(value="/upload",method=RequestMethod.POST)
+//	public String receiveFile(@RequestParam("file") MultipartFile file,@RequestParam("description")String description) throws IOException {
+//		if (!file.isEmpty()) {
+//           System.out.println("File"+description);
+//           UploadFile.uploadFileToDB(file);
+//		}
+//		return "redirect:/load";
+//	}
+//	
+//	@RequestMapping("/loadPractice")
+//	public String loadCanvas() {
+//
+//		return "/views/practice.jsp";
+//	}
+//	
 	
-	@RequestMapping(value="/upload",method=RequestMethod.POST)
-	public String receiveFile(@RequestParam("file") MultipartFile file,@RequestParam("description")String description) throws IOException {
-		if (!file.isEmpty()) {
-           System.out.println("File"+description);
-           UploadFile.parseToCSV(file);
-		}
-		return "redirect:/load";
-	}
 	
 	
 	
-	public static void parseToCSV(MultipartFile file) {
-		
-		//	CSVTODB	
+	
+	
+	
+	
+	
+	public static void uploadFileToDB(MultipartFile file) {
+			
+
+		} 
 
 	}
-}
 
 

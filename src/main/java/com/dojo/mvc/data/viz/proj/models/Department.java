@@ -19,6 +19,9 @@ public class Department {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	private String name;
+	
+
+
 	private String dept_no;
 	
 	@OneToMany(mappedBy="department", fetch = FetchType.LAZY)
@@ -42,14 +45,6 @@ public class Department {
 		this.name = name;
 	}
 
-	public String getDept_no() {
-		return dept_no;
-	}
-
-	public void setDept_no(String dept_no) {
-		this.dept_no = dept_no;
-	}
-
 	public List<SubDepartment> getSub_depts() {
 		return sub_depts;
 	}
@@ -57,5 +52,15 @@ public class Department {
 	public void setSub_depts(List<SubDepartment> sub_depts) {
 		this.sub_depts = sub_depts;
 	}
+	
+	public String getDept_no() {
+		return dept_no;
+	}
+
+	public void setDept_no(String dept_no) {
+		this.dept_no = dept_no;
+	}
+	
+
 
 }

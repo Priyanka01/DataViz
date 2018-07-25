@@ -1,0 +1,788 @@
+{
+    "name": "50 Furniture",
+    "children":[
+        {
+            "name": "10 Upholstery",
+            "children": [
+                {
+                    "name": "Aidan",
+                    "children": [
+                        {"sku": "324934", "name": "AIDAN SF 681-5012 OLIVE       ", "sales": 2124.15, "units": 1},
+                        {"sku": "335319", "name": "AIDAN CH 681-2000 OLIVE       ", "sales": 1486.65, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Ankara",
+                    "children": [
+                        {"sku": "567483", "name": "ANKARA CH ASH GREY WASH       ", "sales": 509.15, "units": 1},
+                        {"sku": "320303", "name": "ANKARA CSHN 4061-CAI CREME    ", "sales": 170, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Axis",
+                    "children": [
+                        {"sku": "221013", "name": "EAC AXIS II SF 1353-SAB NICKEL", "sales": 1614.15, "units": 1},
+                        {"sku": "221097", "name": "EAC AXIS II OT 1353-OAB NICKEL", "sales": 499, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Barrett",
+                    "children": [
+                        {"sku": "654610", "name": "EAC BARRETT RA ASF 1794-PR OTT", "sales": 1298.96, "units": 1},
+                        {"sku": "654317", "name": "EAC BARRETT ARMLS LV 1794-LO A", "sales": 1199.07, "units": 1},
+                        {"sku": "654657", "name": "EAC BARRETT LA CHS 1794-CL OTT", "sales": 1099.97, "units": 1},
+                        {"sku": "654733", "name": "EAC BARRETT CNR 1794-EE OTT   ", "sales": 899, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Briarwood",
+                    "children": [
+                        {"sku": "106037", "name": "EAC BRIARWOOD CH L1017-01 PLTN", "sales": 2199, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Bryn",
+                    "children": [
+                        {"sku": "339735", "name": "BRYN CH 2570C LINEN           ", "sales": 1198, "units": 2}
+                    ]
+                },
+                {
+                    "name": "Cavett",
+                    "children": [
+                        {"sku": "677274", "name": "CAVETT CH 1124-CA3 SPICE      ", "sales": 768.98, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Cooper",
+                    "children": [
+                        {"sku": "106084", "name": "COOPER CH LTHR L1649-01 FAWN  ", "sales": 1899, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Dryden",
+                    "children": [
+                        {"sku": "659615", "name": "EAC DRYDEN ASF 1497-PAB FOG   ", "sales": 1449, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Harborside",
+                    "children": [
+                        {"sku": "259634", "name": "EAC HARBORSIDE CH C5631-01 SNW", "sales": 999, "units": 1},
+                        {"sku": "259642", "name": "EAC HARBORSIDE OT C5631-00 SNW", "sales": 399, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Haven",
+                    "children": [
+                        {"sku": "610119", "name": "HAVEN SWCH 1292-CSS GLINDA EAR", "sales": 499.97, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Infiniti",
+                    "children": [
+                        {"sku": "532182", "name": "*FR:INFINITI SF N2817 OATMEAL ", "sales": 1799, "units": 1},
+                        {"sku": "535300", "name": "*FR:INFINITI OT N2811 OATMEAL ", "sales": 599, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Karnes",
+                    "children": [
+                        {"sku": "659519", "name": "*FR:EAC KARNES QSL71  KRFSO2QS", "sales": 3399, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Lounge",
+                    "children": [
+                        {
+                            "name": "Lounge Standard",
+                            "children": [
+                                {"sku": "302835", "name": "LOUNGE II SF 93  1470-GAB CEME", "sales": 1529.15, "units": 1}
+                            ]
+                        },
+                        {
+                            "name": "Lounge Petite",
+                            "children": [
+                                {"sku": "231338", "name": "EAC LOUNGE II PTSF 1670-SAB CE", "sales": 3050.65, "units": 2}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Marlowe",
+                    "children": [
+                        {"sku": "365362", "name": "MARLOWE DYBD 1247-DBB PLATINUM", "sales": 2588.15, "units": 2}
+                    ]
+                },
+                {
+                    "name": "Montclair",
+                    "children": [
+                        {"sku": "228968", "name": "EAC MONTCLAIR SF 1385-SAB NCKL", "sales": 1444.15, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Petrie",
+                    "children": [
+                        {"sku": "106373", "name": "EAC PETRIE ASF 271-5012-76 FLT", "sales": 1799, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Stow",
+                    "children": [
+                        {"sku": "336744", "name": "STOW STOT LTHR OYSTER         ", "sales": 149, "units": 1},
+                        {"sku": "311818", "name": "STOW STOT LTHR PERSIMMON      ", "sales": 104, "units": 1}
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "15 Custom"
+        },
+        {
+            "name": "20 Special Order",
+            "children": [
+                {
+                    "name":"10 Uph",
+                    "children": [
+                        {
+                            "name": "Axis",
+                            "children": [
+                                {"sku": "421303", "name": "SP/1353-GCLQBLM/BSLB AXIS LA Q", "sales": 4794.85, "units": 1},
+                                {"sku": "421349", "name": "SP/1353-GCLQBRM/BSLB AXIS RA Q", "sales": 4794.85, "units": 1}
+                            ]
+                        },
+                        {
+                            "name": "Patrice",
+                            "children": [
+                                {"sku": "354515", "name": "SP/813-2000 PATRICE CH        ", "sales": 2378.3, "units": 2}
+                            ]
+                        },
+                        {
+                            "name": "Margot",
+                            "children": [
+                                {"sku": "656738", "name": "920-5011-80 MARGOT SF 80      ", "sales": 1914.92, "units": 1}
+                            ]
+                        },
+                        {
+                            "name": "Garbo",
+                            "children": [
+                                {"sku": "212059", "name": "SP/L1723-01 GARBO CHAIR       ", "sales": 1869.15, "units": 1}
+                            ]
+                        },
+                        {
+                            "name": "Elyse",
+                            "children": [
+                                {"sku": "595460", "name": "1421-CAB ELYSE CH LANDRY      ", "sales": 1528.3, "units": 2}
+                            ]
+                        },
+                        {
+                            "name": "Lounge",
+                            "children": [
+                                {
+                                    "name": "Lounge Standard",
+                                    "children":[
+                                        {"sku": "137288", "name": "SP/1470-BRB LOUNGE II RA BMPR ", "sales": 1169.1, "units": 1},
+                                        {"sku": "305087", "name": "SP/1470-EEB LOUNGE II CNR     ", "sales": 899.1, "units": 1},
+                                        {"sku": "305817", "name": "SP/1470-A2B LOUNGE II ARMLS CH", "sales": 719.1, "units": 1},
+                                        {"sku": "526654", "name": "1470-20BD LOUNGE II DEEP STOT ", "sales": 599, "units": 1}
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Dryden",
+                            "children": [
+                                {"sku": "658543", "name": "1497-CKB DRDYEN OT SQ 37      ", "sales": 713.15, "units": 1}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name":"45 Accent Tbl",
+                    "children": [
+                        {
+                            "name": "Etch",
+                            "children": [
+                                {"sku": "117613", "name": "MTO ACID ETCH C TABLE         ", "sales": 522.75, "units": 3}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name":"80 Outdoor",
+                    "children": [
+                        {
+                            "name": "Outdoor Pillow",
+                            "children": [
+                                {"sku": "594005", "name": "SD 20  OUTDOOR PLW CANVAS BLK ", "sales": 159.8, "units": 4},
+                                {"sku": "594412", "name": "SD 20X13 OTDR PLW CABANA CLSSC", "sales": 71.9, "units": 2}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "40 Dining",
+            "children": [
+                {
+                    "name": "Avalon",
+                    "children": [
+                        {"sku": "129197", "name": "AVALON EXT TABLE WHT P1 C2    ", "sales": 698, "units": 2},
+                        {"sku": "129260", "name": "AVALON EXT TABLE WHT P2 C2    ", "sales": 300, "units": 2}
+                    ]
+                },
+                {
+                    "name": "Basque",
+                    "children": [
+                        {"sku": "599732", "name": "BASQUE II 82  DNG TBL GRY WSH ", "sales": 799, "units": 1},
+                        {"sku": "599723", "name": "EAC BASQUE II 65 DNGTBL GRYWHS", "sales": 599, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Belmont",
+                    "children": [
+                        {"sku": "171376", "name": "BELMONT KITCHEN ISLAND WHT 16 ", "sales": 499, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Big Sur",
+                    "children": [
+                        {"sku": "453250", "name": "BIG SUR SIDEBOARD NATURAL     ", "sales": 1614.15, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Care",
+                    "children": [
+                        {"sku": "220994", "name": "FINISHER S FORMULA            ", "sales": 16.95, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Curran",
+                    "children": [
+                        {"sku": "570681", "name": "CURRAN SIDE CHAIR CARMEL      ", "sales": 289, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Delta",
+                    "children": [
+                        {"sku": "296335", "name": "DELTA CHAIR/BRSTL CUSHION BLK ", "sales": 79.8, "units": 4}
+                    ]
+                },
+                {
+                    "name": "Folio",
+                    "children": [
+                        {"sku": "417384", "name": "EAC FOLIO SIDE CHAIR WHISKEY  ", "sales": 798, "units": 2}
+                    ]
+                },
+                {
+                    "name": "Harvey",
+                    "children": [
+                        {"sku": "322206", "name": "HARVEY CHAIR NATURAL          ", "sales": 399, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Lowe",
+                    "children": [
+                        {"sku": "280813", "name": "LOWE SD CHAIR PERSIMMON       ", "sales": 1194, "units": 6},
+                        {"sku": "281178", "name": "LOWE BKLS BENCH SMOKE         ", "sales": 598, "units": 2}
+                    ]
+                },
+                {
+                    "name": "Parsons",
+                    "children": [
+                        {"sku": "639368", "name": "EAC PRSN CNCRT II TOP 60X36   ", "sales": 699.01, "units": 1},
+                        {"sku": "322177", "name": "PRSN BRASS BASE 60X36         ", "sales": 529.99, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Spin",
+                    "children": [
+                        {"sku": "422290", "name": "SPIN STOOL 30                 ", "sales": 218, "units": 2}
+                    ]
+                },
+                {
+                    "name": "Vienna",
+                    "children": [
+                        {"sku": "599347", "name": "EAO VIENNA SIDE CHAIR BLACK E ", "sales": 99, "units": 1}
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "45 Accent Tables",
+            "children": [
+                {
+                    "name": "Avenue",
+                    "children": [
+                        {"sku": "654567", "name": "AVENUE C TABLE                ", "sales": 169, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Clairemont",
+                    "children": [
+                        {"sku": "667968", "name": "CLAIREMONT DMLN CSL BASE C2 P1", "sales": 510, "units": 1},
+                        {"sku": "667976", "name": "CLAIREMONT DMLN CNSL TOP C2 P2", "sales": 189, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Colette",
+                    "children": [
+                        {"sku": "670256", "name": "COLETTE END TABLE             ", "sales": 119.97, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Edgewood",
+                    "children": [
+                        {"sku": "264883", "name": "EDGEWOOD CFFEE TBL SQ FSC TEAK", "sales": 279, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Elke",
+                    "children": [
+                        {"sku": "337856", "name": "ELKE RECT BRASS CFTBL BASE    ", "sales": 559, "units": 1},
+                        {"sku": "298254", "name": "ELKE RECT CFTBL TP GLS 12MM   ", "sales": 280, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Era",
+                    "children": [
+                        {"sku": "543538", "name": "ERA CONSOLE TABLE BASE        ", "sales": 233.4, "units": 1},
+                        {"sku": "542710", "name": "ERA CONSOLE TABLE GLASS       ", "sales": 36, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Knurl",
+                    "children": [
+                        {"sku": "337570", "name": "KNURL LARGE ACCENT TABLE      ", "sales": 99.97, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Lakin",
+                    "children": [
+                        {"sku": "440494", "name": "LAKIN COFFEE TABLE            ", "sales": 679.15, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Silviano",
+                    "children": [
+                        {"sku": "669918", "name": "EAC SILVIANO 60  CONSOLE TABLE", "sales": 849.15, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Spoke",
+                    "children": [
+                        {"sku": "441355", "name": "SPOKE METAL COFFEE TABLE BS/P2", "sales": 567.15, "units": 3},
+                        {"sku": "440896", "name": "EAC SPOKE MRBL CFFEE TBL TP/P1", "sales": 200, "units": 1},
+                        {"sku": "443585", "name": "SPOKE METAL END TABLE BS/P2   ", "sales": 198, "units": 2},
+                        {"sku": "441084", "name": "SPOKE GLASS COFFEE TABLE TP/P1", "sales": 185, "units": 2},
+                        {"sku": "443338", "name": "SPOKE MARBLE END TABLE TP/P1  ", "sales": 70, "units": 1},
+                        {"sku": "443531", "name": "SPOKE GLASS END TABLE TP/P1   ", "sales": 50, "units": 1}
+                    ]
+                }
+            ]
+
+        },
+        {
+            "name": "50 Bedroom",
+            "children": [
+                {
+                    "name": "Atwood",
+                    "children": [
+                        {"sku": "683508", "name": "EAC ATWOOD QN W/O BKCS HDBD P1", "sales": 952, "units": 1},
+                        {"sku": "683516", "name": "EAC ATWOOD QN W/O BKS FTBRDPT2", "sales": 832.15, "units": 1},
+                        {"sku": "196528", "name": "ATWOOD NIGHTSTAND             ", "sales": 509.15, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Dawson",
+                    "children": [
+                        {"sku": "393473", "name": "EAC DAWSON 4-DRWR CHST II-GREY", "sales": 1848.15, "units": 2},
+                        {"sku": "439300", "name": "EAC DAWSON UPH Q BED CLOVE P1 ", "sales": 725.32, "units": 1},
+                        {"sku": "393301", "name": "DAWSON NIGHTSTAND II-GREY WASH", "sales": 678.3, "units": 2},
+                        {"sku": "590403", "name": "EAC DAWSON CANE QN BED  P1 GRY", "sales": 616.52, "units": 1},
+                        {"sku": "439512", "name": "EAC DAWSON UPH Q BED CLOVE P2 ", "sales": 299.75, "units": 1},
+                        {"sku": "590424", "name": "EAC DAWSON CANE QN BED  P2 GRY", "sales": 254.79, "units": 1},
+                        {"sku": "439735", "name": "EAC DAWSON UPH Q BED CLOVE P3 ", "sales": 173.93, "units": 1},
+                        {"sku": "590438", "name": "EAC DAWSON CANE QN BED  P3 GRY", "sales": 147.84, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Gia",
+                    "children": [
+                        {"sku": "667241", "name": "EAC GIA KING BED GREY PT. 1   ", "sales": 1883.73, "units": 1},
+                        {"sku": "667265", "name": "EAC GIA KING BED GREY PT. 2   ", "sales": 215.27, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Linea",
+                    "children": [
+                        {"sku": "446301", "name": "LINEA II QUEEN BED NAT P1     ", "sales": 2071.25, "units": 2},
+                        {"sku": "446318", "name": "LINEA II QUEEN BED NAT P2     ", "sales": 886.9, "units": 2},
+                        {"sku": "446172", "name": "EAC LINEA II FULL BED NAT P1  ", "sales": 823.2, "units": 1},
+                        {"sku": "446400", "name": "EAC LINEA II 4-D DRESSER NAT  ", "sales": 759.97, "units": 1},
+                        {"sku": "446387", "name": "LINEA II 1-D NIGHTSTAND NAT   ", "sales": 381.65, "units": 1},
+                        {"sku": "446248", "name": "EAC LINEA II FULL BED NAT P2  ", "sales": 365.95, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Mattress",
+                    "children": [
+                        {"sku": "346798", "name": "BRS FIRM QUEEN MATTRESS       ", "sales": 1199, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Oliver",
+                    "children": [
+                        {"sku": "344227", "name": "EAO OLIVER KING BED PT. 1     ", "sales": 293, "units": 1},
+                        {"sku": "344030", "name": "EAO OLIVER QUEEN BED PT. 1    ", "sales": 239, "units": 1},
+                        {"sku": "344243", "name": "EAO OLIVER KING BED PT. 2     ", "sales": 103, "units": 1},
+                        {"sku": "344269", "name": "EAO OLIVER KING BED PT. 3     ", "sales": 103, "units": 1},
+                        {"sku": "344073", "name": "EAO OLIVER QUEEN BED PT. 2    ", "sales": 80, "units": 1},
+                        {"sku": "344104", "name": "EAO OLIVER QUEEN BED PT. 3    ", "sales": 80, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Oxford",
+                    "children": [
+                        {"sku": "322284", "name": "OXFORD KING BED PT.1          ", "sales": 3060.02, "units": 2},
+                        {"sku": "322716", "name": "OXFORD 6-DRAWER DRESSER       ", "sales": 1529.15, "units": 1},
+                        {"sku": "322319", "name": "OXFORD KING BED PT. 3         ", "sales": 963.88, "units": 2},
+                        {"sku": "322301", "name": "OXFORD KING BED PT. 2         ", "sales": 734.4, "units": 2}
+                    ]
+                },
+                {
+                    "name": "Tate",
+                    "children": [
+                        {
+                            "name": "Tate Casegoods",
+                            "children": [
+                                {"sku": "470877", "name": "TATE 9-DRAWER DRESSER         ", "sales": 2998, "units": 2},
+                                {"sku": "216665", "name": "TATE SMALL CHEST              ", "sales": 1099, "units": 1},
+                                {"sku": "592561", "name": "TATE 2D NIGHTSTAND W/ POWER   ", "sales": 1018.3, "units": 2},
+                                {"sku": "470889", "name": "TATE NIGHTSTAND               ", "sales": 898, "units": 2},
+                                {"sku": "216711", "name": "TATE SLATTED BENCH            ", "sales": 466.64, "units": 1},
+                                {"sku": "216777", "name": "TATE BENCH CUSHION CHARCOAL   ", "sales": 296.66, "units": 1}
+                            ]
+                        },
+                        {
+                            "name": "Tate Upholstered Bed",
+                            "children": [
+                                {"sku": "538220", "name": "TATE CHARCOAL QUEEN BED P1    ", "sales": 1315.15, "units": 1},
+                                {"sku": "538235", "name": "TATE CHARCOAL QUEEN BED P2    ", "sales": 183.85, "units": 1}
+                            ]
+                        },
+                        {
+                            "name": "Tate Wood Bed",
+                            "children": [
+                                {"sku": "327520", "name": "EAC TATE KING WOOD BED PT.3   ", "sales": 421.59, "units": 1},
+                                {"sku": "326625", "name": "EAC TATE KING WOOD BED PT.1   ", "sales": 403.77, "units": 1},
+                                {"sku": "326469", "name": "TATE Q WOOD BD P3 SD RAILS    ", "sales": 351.9, "units": 1},
+                                {"sku": "326373", "name": "TATE Q WOOD BED P1 HDBRD      ", "sales": 337.44, "units": 1},
+                                {"sku": "327516", "name": "EAC TATE KING WOOD BED PT.2   ", "sales": 193.79, "units": 1},
+                                {"sku": "326416", "name": "TATE Q WOOD BD P2 FOOTBRD     ", "sales": 159.81, "units": 1}
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "55 Storage",
+            "children": [
+                {
+                    "name": "Aspect",
+                    "children": [
+                        {"sku": "327828", "name": "ASPECT WALNUT 47.5  SLDG DR UT", "sales": 678.3, "units": 2},
+                        {"sku": "444563", "name": "EAC ASPECT BKCSE WALNUT       ", "sales": 424.15, "units": 1},
+                        {"sku": "327692", "name": "EAC ASPECT CFFE 47.5 SG DR UNT", "sales": 399, "units": 1},
+                        {"sku": "327678", "name": "EAC ASPECT CFFEE 47.5  OPN UNT", "sales": 299, "units": 1},
+                        {"sku": "327802", "name": "ASPECT WALNUT 47.5  OPEN UNIT ", "sales": 254.15, "units": 1},
+                        {"sku": "170967", "name": "BENCH CUSHION 44  DARK GRANITE", "sales": 60.31, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Austin",
+                    "children": [
+                        {"sku": "339530", "name": "EAC AUSTIN 62  MEDIA CONSOLE  ", "sales": 999, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Cameo",
+                    "children": [
+                        {"sku": "669276", "name": "CAMEO GREY OPEN BOOKCASE      ", "sales": 1438.17, "units": 2},
+                        {"sku": "669932", "name": "CAMEO GREY MEDIA CONSOLE      ", "sales": 1259.15, "units": 1},
+                        {"sku": "369725", "name": "EAC CAMEO GREY FLCRN/LFT OPNBS", "sales": 269.99, "units": 1},
+                        {"sku": "369826", "name": "EAC CAMEO GREY FL CRN/RT OPN B", "sales": 269.99, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Marin",
+                    "children": [
+                        {"sku": "449496", "name": "MARIN BAR CABINET SHIITAKE    ", "sales": 1299, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Maxine",
+                    "children": [
+                        {"sku": "554189", "name": "MAXINE BAR CABINET            ", "sales": 2958.15, "units": 2}
+                    ]
+                },
+                {
+                    "name": "Rigby",
+                    "children": [
+                        {"sku": "669995", "name": "EAC RIGBY 55  MEDIA CONSOLE   ", "sales": 899, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Steamer",
+                    "children": [
+                        {"sku": "233296", "name": "STEAMER BAR CABINET C2        ", "sales": 1399, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Wyatt",
+                    "children":[
+                        {"sku": "439535", "name": "EAC WYATT 60  MEDIA CONSLE GRY", "sales": 764.15, "units": 1}
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "75 Home Office",
+            "children": [
+                {
+                    "name": "Aspect",
+                    "children": [
+                        {"sku": "326733", "name": "ASPECT LOW FILE WALNUT        ", "sales": 254.15, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Morris",
+                    "children": [
+                        {"sku": "671212", "name": "EAC MORRIS LARGE DESK ASH GREY", "sales": 679.15, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Navigator",
+                    "children": [
+                        {"sku": "673605", "name": "NAVIGATOR OFFICE CHAIR SADDLE ", "sales": 509.15, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Ripple",
+                    "children": [
+                        {"sku": "443221", "name": "EAC RIPPLE IVORY CH W BRASS   ", "sales": 399, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Sawyer",
+                    "children": [
+                        {"sku": "196763", "name": "EAC SAWYER 18  BKCS WHITE PT1 ", "sales": 149.6, "units": 2},
+                        {"sku": "206788", "name": "EAC SAWYER 18  BKCS WHITE PT2 ", "sales": 69.7, "units": 2}
+                    ]
+                },
+                {
+                    "name": "Spotlight",
+                    "children": [
+                        {"sku": "235523", "name": "SPOTLIGHT EBONY FILE C2       ", "sales": 349, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Strut",
+                    "children": [
+                        {"sku": "328270", "name": "STRUT BOOKCASE TEAK           ", "sales": 799, "units": 1},
+                        {"sku": "531313", "name": "EAC STRUT BOOKCASE BOURBON II ", "sales": 699, "units": 1},
+                        {"sku": "325647", "name": "STRUT WORK TABLE BASE TEAK    ", "sales": 520, "units": 1},
+                        {"sku": "505253", "name": "STRUT WK TBL 34X70  GLASS TOP ", "sales": 279, "units": 1}
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "80 Outdoor Furniture",
+            "children": [
+                {
+                    "name": "Alfresco",
+                    "children": [
+                        {"sku": "446271", "name": "EAC ALFRESCO II 24  CNTRST GRY", "sales": 378, "units": 2},
+                        {"sku": "445928", "name": "EAC ALFRESCO II CAFE TBLE GREY", "sales": 339, "units": 1},
+                        {"sku": "446040", "name": "EAC ALFRESCO II HD TABLE GREY ", "sales": 339, "units": 1},
+                        {"sku": "445697", "name": "EAC ALFRESCO II DNG CHAIR GREY", "sales": 318, "units": 2},
+                        {"sku": "448509", "name": "EAC ALFRESCO II SD TBL NAT    ", "sales": 258, "units": 2},
+                        {"sku": "355510", "name": "EAC ALFRESCO SEAT CSN MEDTNBLE", "sales": 152, "units": 8},
+                        {"sku": "448194", "name": "ALFRESCO II SIDE TABLE GRY    ", "sales": 149, "units": 1},
+                        {"sku": "579187", "name": "ALFRESCO CHSE CSH CHAR 3IN    ", "sales": 139, "units": 1},
+                        {"sku": "448361", "name": "EAC ALFRESCO LNGCHCSH CILANTRO", "sales": 98, "units": 2},
+                        {"sku": "579272", "name": "ALFRESCO LNGCH CSH CHR 3IN    ", "sales": 49, "units": 1},
+                        {"sku": "445072", "name": "EAC ALFRESCO STCSH CILANTRO   ", "sales": 39, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Care",
+                    "children": [
+                        {"sku": "277557", "name": "EAO SECTIONAL COVER LARGE     ", "sales": 379, "units": 1},
+                        {"sku": "277707", "name": "EAO TABLE COVER RECT. W/CHAIRS", "sales": 239, "units": 1},
+                        {"sku": "277481", "name": "EAO LOUNGE CHAIR COVER MEDIUM ", "sales": 198, "units": 2},
+                        {"sku": "277354", "name": "EAO STACKABLE CHAIR COVER     ", "sales": 178, "units": 2},
+                        {"sku": "433438", "name": "GOLDEN CARE TEAK PROTECTOR    ", "sales": 30, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Crest",
+                    "children": [
+                        {"sku": "219131", "name": "CREST SIDE TABLE/STOOL        ", "sales": 438, "units": 2}
+                    ]
+                },
+                {
+                    "name": "Dune",
+                    "children": [
+                        {"sku": "546375", "name": "DUNE SOFA W/CUSHION TAUPE     ", "sales": 3777, "units": 3},
+                        {"sku": "546383", "name": "DUNE LNGE CHAIR W/ CSHN TAUPE ", "sales": 1598, "units": 2},
+                        {"sku": "217089", "name": "EAC DUNE RA LOVESEAT NAVY     ", "sales": 1168.98, "units": 1},
+                        {"sku": "217117", "name": "EAC DUNE LA LOVESEAT NAVY     ", "sales": 1168.98, "units": 1},
+                        {"sku": "545948", "name": "EAC DUNE CNTRSTOOL W/CSHNTAUPE", "sales": 898, "units": 2},
+                        {"sku": "669017", "name": "EAC DUNE SCTNL CRNR W/CSHN TP ", "sales": 759, "units": 1},
+                        {"sku": "217122", "name": "EAC DUNE CORNER CHAIR NAVY    ", "sales": 699.05, "units": 1},
+                        {"sku": "217130", "name": "EAC DUNE ARMLESS CHAIR NAVY   ", "sales": 578.99, "units": 1},
+                        {"sku": "547746", "name": "EAC DUNE HIGH DINING TBL FRAME", "sales": 539, "units": 1},
+                        {"sku": "547703", "name": "EAC DUNE HIGHDNG TBL PNTED GLS", "sales": 179, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Hexa",
+                    "children": [
+                        {"sku": "216277", "name": "HEXA BISTRO TABLE             ", "sales": 1494, "units": 6},
+                        {"sku": "216332", "name": "HEXA COFFEE TABLE             ", "sales": 498, "units": 2},
+                        {"sku": "216302", "name": "HEXA SIDE TABLE               ", "sales": 119, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Largo",
+                    "children": [
+                        {"sku": "577188", "name": "EAO LARGO MESH DNG ARM CH CHRC", "sales": 552, "units": 8},
+                        {"sku": "363263", "name": "LARGO MSH DNGARMCH MEDITBLUE  ", "sales": 472, "units": 8},
+                        {"sku": "577414", "name": "EAO LARGO FLIPTOP TABLE SQUARE", "sales": 318, "units": 2},
+                        {"sku": "577397", "name": "EAC LARGO LNG CH MEDITNEN BLUE", "sales": 198, "units": 2},
+                        {"sku": "364080", "name": "EAO LARGO FLIPTOP TBL 31.5 RND", "sales": 119, "units": 1},
+                        {"sku": "577432", "name": "EAC LARGO OTT MEDITERRAN BLUE ", "sales": 98, "units": 2}
+                    ]
+                },
+                {
+                    "name": "Lattice",
+                    "children": [
+                        {"sku": "216656", "name": "LATTICE CIRCLE TABLE LARGE    ", "sales": 119, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Mesa",
+                    "children": [
+                        {"sku": "391656", "name": "MESA SIDE TABLE/STOOL         ", "sales": 876, "units": 4}
+                    ]
+                },
+                {
+                    "name": "Millstone",
+                    "children": [
+                        {"sku": "219141", "name": "MILLSTONE COFFEE TABLE        ", "sales": 499, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Morocco",
+                    "children": [
+                        {"sku": "670107", "name": "EAO MOROCCO DINING CHAIR GRPHT", "sales": 2690, "units": 10},
+                        {"sku": "447998", "name": "EAO MOROCCO SECT CRNRCH LT GRY", "sales": 746.99, "units": 3},
+                        {"sku": "447944", "name": "EAO MOROCCO SECTARMLSCH LT GRY", "sales": 597.07, "units": 3},
+                        {"sku": "448463", "name": "EAO MOROCCO CRNRCSH SLVR      ", "sales": 356.98, "units": 3},
+                        {"sku": "448577", "name": "EAO MOROCCO ARMLS/LNGCH CH SLV", "sales": 296.96, "units": 3}
+                    ]
+                },
+                {
+                    "name": "Outdoor Pillow",
+                    "children": [
+                        {"sku": "221197", "name": "CABANA STRPE 20X20OUTDR PLW   ", "sales": 239.6, "units": 8},
+                        {"sku": "445944", "name": "SHIBORI CHAR 20X20 OUTDR PLW  ", "sales": 209.65, "units": 7},
+                        {"sku": "221516", "name": "20  OUTDOOR PLW DARK NAVY     ", "sales": 199.75, "units": 5},
+                        {"sku": "447630", "name": "FISH 20X13 OUTDR PLW          ", "sales": 164.45, "units": 11},
+                        {"sku": "444382", "name": "20  OUTDOOR PLW SOFT MINERAL  ", "sales": 159.8, "units": 4},
+                        {"sku": "447584", "name": "SHIBORI CHAR 20X13 OUTDR PLW  ", "sales": 129.75, "units": 5},
+                        {"sku": "446631", "name": "SHIBORI NAVY 20X20 OUTDR PLW  ", "sales": 119.8, "units": 4},
+                        {"sku": "443341", "name": "20  OUTDOOR PLW GRAPHITE      ", "sales": 89.85, "units": 3},
+                        {"sku": "227392", "name": "CROCHET PILLOW GREY           ", "sales": 79.95, "units": 1},
+                        {"sku": "221385", "name": "20  OUTDOR PLW SILVER         ", "sales": 79.9, "units": 2},
+                        {"sku": "444481", "name": "20X13 OUTDR PLW GRAPHITE      ", "sales": 74.85, "units": 3},
+                        {"sku": "446294", "name": "OVRLAPNG ARCHS 20X20 OUTDR PLW", "sales": 74.75, "units": 5},
+                        {"sku": "447608", "name": "WATER STRIPE 20X13 OUTDR PLW  ", "sales": 74.75, "units": 5},
+                        {"sku": "221230", "name": "CABANA STRIP 20X13OUTDR PLW   ", "sales": 49.9, "units": 2},
+                        {"sku": "446758", "name": "GRIT MIDNIGHT 20X20 OUTDR PLW ", "sales": 49.9, "units": 2},
+                        {"sku": "446504", "name": "FISH 20X20 OUTDR PLW          ", "sales": 44.85, "units": 3},
+                        {"sku": "682358", "name": "20  OUTDOOR PLW WHITE SAND    ", "sales": 39.95, "units": 1},
+                        {"sku": "221545", "name": "20X13 OUTDR PLW MEDTN BLUE    ", "sales": 29.9, "units": 2},
+                        {"sku": "447612", "name": "NAVY WAVES 20X13 OUTDR PLW    ", "sales": 29.9, "units": 2}
+                    ]
+                },
+                {
+                    "name": "Regatta",
+                    "children": [
+                        {"sku": "595950", "name": "REGATTA EXTENSION TBL NAT     ", "sales": 4158, "units": 2},
+                        {"sku": "596507", "name": "EAC REGATTA SOFA NATURAL      ", "sales": 1229.01, "units": 1},
+                        {"sku": "595896", "name": "REGATTA DINING BENCH FSC NAT  ", "sales": 1198.01, "units": 2},
+                        {"sku": "595683", "name": "REGATTA DINING CHAIR NAT      ", "sales": 857.99, "units": 2},
+                        {"sku": "596566", "name": "EAC REGATTA LOUNGE CHAIR NAT  ", "sales": 648.99, "units": 1},
+                        {"sku": "596639", "name": "EAC REGATTA OTTOMAN NAT       ", "sales": 319, "units": 1},
+                        {"sku": "223326", "name": "EAC REGATTA DNGBNCH CSH DRKNAV", "sales": 237.99, "units": 2},
+                        {"sku": "448956", "name": "EAC REGATTA WLTD SFCSH SFMN S2", "sales": 228.99, "units": 1},
+                        {"sku": "277645", "name": "EAO REGATTA SOFA COVER MEDIUM ", "sales": 199, "units": 1},
+                        {"sku": "449386", "name": "EAC REGATTA WLTD CHS CSH SFTMN", "sales": 198, "units": 2},
+                        {"sku": "449397", "name": "EAC REGATTA WLT LNGCH CSH SFMN", "sales": 99.01, "units": 1},
+                        {"sku": "223296", "name": "EAC REGATTA DNG CHR CSH DRKNAV", "sales": 98.01, "units": 2},
+                        {"sku": "449402", "name": "EAC REGATTA WLTD OT CSH SFMNRL", "sales": 89, "units": 1}
+                    ]
+                },
+                {
+                    "name": "Regent",
+                    "children": [
+                        {"sku": "217952", "name": "REGENT DINING CHAIR           ", "sales": 833, "units": 7},
+                        {"sku": "218086", "name": "REGENT LOUNGE CHAIR           ", "sales": 716.4, "units": 4},
+                        {"sku": "218053", "name": "REGENT DINING TABLE           ", "sales": 419, "units": 1},
+                        {"sku": "262656", "name": "REGENT LNG CHR CSHN MD BLU    ", "sales": 392.4, "units": 4}
+                    ]
+                },
+                {
+                    "name": "Rocha",
+                    "children": [
+                        {"sku": "448642", "name": "EAO ROCHA II DINING ARM CHAIR ", "sales": 952, "units": 8},
+                        {"sku": "450069", "name": "EAO ROCHA II SOFA             ", "sales": 381.97, "units": 1},
+                        {"sku": "450211", "name": "EAO ROCHA II LOUNGE CHAIR     ", "sales": 300, "units": 2},
+                        {"sku": "450347", "name": "EAO ROCHA II SIDE TABLE       ", "sales": 296.94, "units": 3},
+                        {"sku": "448077", "name": "EAO ROCHA LOUNGE CH CSHN CLNTR", "sales": 53.94, "units": 2}
+                    ]
+                },
+                {
+                    "name": "Table In A Bag",
+                    "children": [
+                        {"sku": "670848", "name": "TABLE IN A BAG                ", "sales": 279.65, "units": 7}
+                    ]
+                },
+                {
+                    "name": "Umbrella",
+                    "children": [
+                        {"sku": "582703", "name": "EAC 9  RND TILT UMB FRAME BLK ", "sales": 554.1, "units": 6},
+                        {"sku": "216566", "name": "UMBRELLA BASE SMALL           ", "sales": 485.1, "units": 5},
+                        {"sku": "216532", "name": "EAC UMBRELLA BASE LRG W/ WHLS ", "sales": 387, "units": 3},
+                        {"sku": "219837", "name": "EAC 10  CANTILEVER RND PT 2-BS", "sales": 330, "units": 1},
+                        {"sku": "354700", "name": "9  RND UMB CVR MEDTN BLUE     ", "sales": 283.1, "units": 2},
+                        {"sku": "219194", "name": "EAC 10  CANTILVR RND PT 1-FRM ", "sales": 268.99, "units": 1},
+                        {"sku": "262566", "name": "EAC 10  RND UMB CVR STONE     ", "sales": 249.01, "units": 1},
+                        {"sku": "449176", "name": "EAC RECT UMB CVR CILANTRO     ", "sales": 199, "units": 1},
+                        {"sku": "449320", "name": "EAC RECT UMB CVR GRAPHITE     ", "sales": 199, "units": 1},
+                        {"sku": "222075", "name": "EAC 9  RND UMB CVR CABANA STRP", "sales": 189, "units": 1},
+                        {"sku": "448909", "name": "EAC 9  RND UMB CVR GRAPHITE   ", "sales": 189, "units": 1},
+                        {"sku": "575804", "name": "9  RND UMB CVR STONE          ", "sales": 189, "units": 1},
+                        {"sku": "620289", "name": "EAC 9  RND UMB CVR WHITE SAND ", "sales": 189, "units": 1},
+                        {"sku": "108582", "name": "RECT FSC UMB FRAME EUCALYPTUS ", "sales": 129, "units": 1},
+                        {"sku": "603570", "name": "EAC RECT UMB FRAME BLACK      ", "sales": 119, "units": 1}
+                    ]
+                }
+            ]
+        }
+    ]
+}
