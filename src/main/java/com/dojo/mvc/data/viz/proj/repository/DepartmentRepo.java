@@ -10,5 +10,5 @@ import com.dojo.mvc.data.viz.proj.models.Department;
 @Repository
 public interface DepartmentRepo extends CrudRepository<Department,Long>{
 	List<Department> findAll();
-	Department findByDeptNo(String dId);
+	Department findByDepartmentNumber(String dId);
 }

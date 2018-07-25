@@ -1,5 +1,6 @@
 package com.dojo.mvc.data.viz.proj.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -35,8 +36,13 @@ public class SubDepartment {
         inverseJoinColumns = @JoinColumn(name = "brand_id")
     )
 	private List<Brand> brands;
-	
 	public SubDepartment() {}
+	public SubDepartment(String sub, String string, Department depo) {
+		this.brands = new ArrayList<Brand>();
+		this.name = string;
+		this.subNo = sub;
+		this.department = depo;
+	}
 
 	
 	public Long getId() {

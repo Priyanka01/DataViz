@@ -1,5 +1,6 @@
 package com.dojo.mvc.data.viz.proj.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -10,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -28,18 +30,15 @@ public class Brand {
         joinColumns = @JoinColumn(name = "brand_id"), 
         inverseJoinColumns = @JoinColumn(name = "subdepartment_id")
     )
-	private List<SubDepartment> sub_depts;
+	private List<SubDepartment> subDepts;
 	
 
-	@ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(
-        name = "brands_sales", 
-        joinColumns = @JoinColumn(name = "brand_id"), 
-        inverseJoinColumns = @JoinColumn(name = "sale_id")
-    )
-	private List<Sale> sales;
+	 @OneToMany(mappedBy="brand", fetch = FetchType.LAZY)
+	    private List<Sale> sales;
 	
-	public Brand() {}
+	public Brand() {
+		this.subDepts = new ArrayList<SubDepartment>();
+	}
 	
 	public Long getId() {
 		return id;
@@ -71,13 +70,13 @@ public class Brand {
 	}
 
 
-	public List<SubDepartment> getSub_depts() {
-		return sub_depts;
+	public List<SubDepartment> getSubDepts() {
+		return subDepts;
 	}
 
 
-	public void setSub_depts(List<SubDepartment> sub_depts) {
-		this.sub_depts = sub_depts;
+	public void setSubDepts(List<SubDepartment> subDepts) {
+		this.subDepts = subDepts;
 	}
 
 
@@ -88,6 +87,11 @@ public class Brand {
 
 	public void setSales(List<Sale> sales) {
 		this.sales = sales;
+	}
+
+	public void addSale(Sale e) {
+		this.sales.add(e);
+		
 	}
 
 
