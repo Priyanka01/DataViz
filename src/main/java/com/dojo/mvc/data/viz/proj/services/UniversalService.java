@@ -123,6 +123,7 @@ public class UniversalService {
 						String name = brandList.get(k).getName().toUpperCase();
 						String test = "BLAKE";
 						name = name.replaceAll("\\s","");
+//						name = name.replaceAll("", "");
 						if(check.contains(name) == true) {
 							sale.setBrand(brandList.get(k));
 							brandRepo.save(brandList.get(k));
