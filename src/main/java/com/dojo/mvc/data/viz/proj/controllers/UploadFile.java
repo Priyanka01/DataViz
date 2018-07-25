@@ -1,14 +1,22 @@
 package com.dojo.mvc.data.viz.proj.controllers;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+
 import java.io.StringWriter;
 
+import java.util.List;
+
+
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.dojo.mvc.data.viz.proj.models.Brand;
 import com.dojo.mvc.data.viz.proj.services.UniversalService;
 
 
@@ -26,6 +34,7 @@ public class UploadFile {
 //		UniversalService.createJSON(true);
 		return "/views/index.jsp";
 	}
+
 //	
 //	@RequestMapping("/loadClickable")
 //	public String uploadFile() {
@@ -48,19 +57,40 @@ public class UploadFile {
 //	}
 //	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	public static void uploadFileToDB(MultipartFile file) {
-			
 
-		} 
-
+	@GetMapping("/upload")
+	public String insertFile() {
+		return "/views/uploadFile.jsp";
 	}
+	@RequestMapping(value="/upload",method=RequestMethod.POST)
+	public String receiveFile(@RequestParam("file") MultipartFile file,@RequestParam("description")String description) throws IOException {
+		if (!file.isEmpty()) {
+           System.out.println("File"+ description);
+//           File newFile = (File) file;
+//           UploadFile.parseToCSV(file);
+           File newfile = convert(file);
+           uservice.CSVtoDB(newfile);
+		}
+		return "redirect:/load";
+	}
+	
+	
+	
+	public File convert(MultipartFile file)
+	{    
+	    File convFile = new File(file.getOriginalFilename());
+	    try {
+			convFile.createNewFile(); 
+	    FileOutputStream fos = new FileOutputStream(convFile); 
+	    fos.write(file.getBytes());
+	    fos.close(); 
+	    return convFile;
+	    } catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return convFile;
+	}
+}
 
 

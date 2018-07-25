@@ -1,5 +1,6 @@
 package com.dojo.mvc.data.viz.proj.models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -23,7 +24,7 @@ public class SubDepartment {
 	private Long id;
 	
 	private String name;
-	
+	private String subNo;
 	@ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="department_id")
     private Department department;
@@ -35,8 +36,13 @@ public class SubDepartment {
         inverseJoinColumns = @JoinColumn(name = "brand_id")
     )
 	private List<Brand> brands;
-	
 	public SubDepartment() {}
+	public SubDepartment(String sub, String string, Department depo) {
+		this.brands = new ArrayList<Brand>();
+		this.name = string;
+		this.subNo = sub;
+		this.department = depo;
+	}
 
 	
 	public Long getId() {
@@ -47,6 +53,14 @@ public class SubDepartment {
 		this.id = id;
 	}
 
+	public String getSubNo() {
+		return subNo;
+	}
+
+	public void setSubNo(String subNo) {
+		this.subNo = subNo;
+	}
+	
 	public String getName() {
 		return name;
 	}
@@ -70,7 +84,10 @@ public class SubDepartment {
 	public void setBrands(List<Brand> brands) {
 		this.brands = brands;
 	}
-
+	
+	public void addBrand(Brand brand) {
+		this.brands.add(brand);
+	}
 	
 
 }

@@ -10,6 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -23,18 +24,24 @@ public class Sale {
 	private String sku_number;
 	private String name;
 	private Integer quantity;
-	private Double amount;
+	private Integer amount;
 	
-	@ManyToMany(fetch = FetchType.LAZY)
-    @JoinTable(
-        name = "brands_sales", 
-        joinColumns = @JoinColumn(name = "sale_id"), 
-        inverseJoinColumns = @JoinColumn(name = "brand_id")
-    )
-	private List<Brand> brands;
+	@ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="brand_id")
+	private Brand brand;
 	
-	public Sale() {}
+	public Sale() {
+		
+	}
 	
+	public Sale(String sku_number, String name, Integer quantity, Integer amount) {
+		this.sku_number = sku_number;
+		this.name = name;
+		this.quantity = quantity;
+		this.amount = amount;
+
+	}
+
 	public Long getId() {
 		return id;
 	}
@@ -75,24 +82,25 @@ public class Sale {
 	}
 
 
-	public Double getAmount() {
+	public Integer getAmount() {
 		return amount;
 	}
 
 
-	public void setAmount(Double amount) {
+	public void setAmount(Integer amount) {
 		this.amount = amount;
 	}
 
 
-	public List<Brand> getBrands() {
-		return brands;
+	public Brand getBrand() {
+		return brand;
 	}
 
 
-	public void setBrands(List<Brand> brands) {
-		this.brands = brands;
+	public void setBrand(Brand brand) {
+		this.brand = brand;
 	}
+
 
 
 
