@@ -30,6 +30,11 @@ public class Sale {
     @JoinColumn(name="brand_id")
 	private Brand brand;
 	
+	
+	@ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="subdepartment_id")
+	private SubDepartment subdepartment;
+	
 	public Sale() {
 		
 	}
@@ -41,6 +46,8 @@ public class Sale {
 		this.amount = amount;
 
 	}
+	
+	
 
 	public Long getId() {
 		return id;
@@ -99,6 +106,14 @@ public class Sale {
 
 	public void setBrand(Brand brand) {
 		this.brand = brand;
+	}
+
+	public SubDepartment getSubdepartment() {
+		return subdepartment;
+	}
+
+	public void setSubdepartment(SubDepartment subdepartment) {
+		this.subdepartment = subdepartment;
 	}
 
 
