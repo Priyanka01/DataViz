@@ -1,21 +1,15 @@
 package com.dojo.mvc.data.viz.proj.controllers;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
-
 import java.io.StringWriter;
-
 import java.util.List;
-
-
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
-
 import com.dojo.mvc.data.viz.proj.models.Brand;
 import com.dojo.mvc.data.viz.proj.services.UniversalService;
 
