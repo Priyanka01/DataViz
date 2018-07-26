@@ -12,6 +12,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 
@@ -36,6 +37,10 @@ public class SubDepartment {
         inverseJoinColumns = @JoinColumn(name = "brand_id")
     )
 	private List<Brand> brands;
+	
+	@OneToMany(mappedBy="subdepartment", fetch = FetchType.LAZY)
+	private List <Sale> sales;
+	
 	public SubDepartment() {}
 	public SubDepartment(String sub, String string, Department depo) {
 		this.brands = new ArrayList<Brand>();
@@ -87,6 +92,12 @@ public class SubDepartment {
 	
 	public void addBrand(Brand brand) {
 		this.brands.add(brand);
+	}
+	public List<Sale> getSales() {
+		return sales;
+	}
+	public void setSales(List<Sale> sales) {
+		this.sales = sales;
 	}
 	
 
