@@ -119,25 +119,27 @@ public class UniversalService {
 					}
 					String check = items.get(i)[1];
 					Boolean flag = false;
+					sale.setSubdepartment(subDept);
+					saleRepo.save(sale);
 					
-					
-					for(int k = 0; k < brandList.size(); k++) {
-						String name = brandList.get(k).getName().toUpperCase();
-						String test = "BLAKE";
-						name = name.replaceAll("\\s","");
-						if(check.contains(name) == true) {
-							sale.setBrand(brandList.get(k));
-							brandRepo.save(brandList.get(k));
-							if(subDept.getBrands().contains(brandList.get(k)) == false) {
-								subDept.addBrand(brandList.get(k));
-								subRepo.save(subDept);
-							}
-							flag = true;
-						}
-						if (flag = false) {
-							notMapped.add(sale);
-						}
-					}
+//					for(int k = 0; k < brandList.size(); k++) {
+//						String name = brandList.get(k).getName().toUpperCase();
+//						String test = "BLAKE";
+//						name = name.replaceAll("\\s","");
+//						name = name.replaceAll("II","");
+//						if(check.contains(name) == true) {
+//							sale.setBrand(brandList.get(k));
+//							brandRepo.save(brandList.get(k));
+//							if(subDept.getBrands().contains(brandList.get(k)) == false) {
+//								subDept.addBrand(brandList.get(k));
+//								subRepo.save(subDept);
+//							}
+//							flag = true;
+//						}
+//						if (flag = false) {
+//							notMapped.add(sale);
+//						}
+//					}
 				}	
 			}
 			
