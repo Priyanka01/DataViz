@@ -183,14 +183,14 @@ public class UniversalService {
 		    		 jsonWriter.name("children");
 		    		 jsonWriter.beginArray();
 		    		 
-		    		 List<Sale> salesList = this.saleRepo.findAll(b.getId());
+		    		 List<Sale> salesList = this.saleRepo.findAllByBrandAndSubDept(b.getId(),s.getId(),department.getId());
 		    		 
 		    		 for(Sale sale : salesList) {
 		    			 jsonWriter.beginObject();
 		    			 jsonWriter.name("sku").value(sale.getSku_number());
 		    			 jsonWriter.name("name").value(sale.getName());
 		    			 jsonWriter.name("sales").value(sale.getAmount());
-		    			 jsonWriter.name("unites").value(sale.getQuantity());
+		    			 jsonWriter.name("units").value(sale.getQuantity());
 		    			 jsonWriter.endObject();
 		    		 }
 		    		 jsonWriter.endArray();

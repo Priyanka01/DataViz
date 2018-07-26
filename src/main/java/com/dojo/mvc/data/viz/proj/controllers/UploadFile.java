@@ -40,6 +40,14 @@ public class UploadFile {
 	public String uploadFile() {
 		return "/views/Clickable.jsp";
 	}
+	
+	
+	@RequestMapping("/loadZoomMap")
+	public String displayZoom() {
+		this.uservice.createJSON(true);
+		return "/views/Clickable2.jsp";
+	}
+	
 //	
 //	@RequestMapping(value="/upload",method=RequestMethod.POST)
 //	public String receiveFile(@RequestParam("file") MultipartFile file,@RequestParam("description")String description) throws IOException {

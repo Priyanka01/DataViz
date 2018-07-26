@@ -12,7 +12,7 @@ import com.dojo.mvc.data.viz.proj.models.Brand;
 public interface BrandRepo extends CrudRepository<Brand,Long>{
 	List<Brand> findAll();
 	
-	@Query(value="select * from brands" , nativeQuery=true)
+	@Query(value="select * from brands join subdepts_brands on brands.id = subdepts_brands.brand_id where subdepts_brands.subdepartment_id = ?1 " , nativeQuery=true)
 	List<Brand> findAllWithBrandsItemsNotNull(Long subid,Long deptid);
 	
 	

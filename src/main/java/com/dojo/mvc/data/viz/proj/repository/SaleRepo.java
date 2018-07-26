@@ -12,6 +12,6 @@ import com.dojo.mvc.data.viz.proj.models.Sale;
 public interface SaleRepo extends CrudRepository<Sale,Long>{
 	
 	@Query(value = "select * from sales where brand_id = ?1 and amount > 0 and brand_id != ''",nativeQuery=true)
-	List<Sale> findAll(Long brandid);
+	List<Sale> findAllByBrandAndSubDept(Long brandid,Long sub,Long dept);
 
 }
