@@ -1,16 +1,15 @@
 package com.dojo.mvc.data.viz.proj.services;
 
-
-import org.json.JSONObject;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-
+import org.json.JSONObject;
 import org.springframework.stereotype.Service;
-import org.springframework.web.multipart.MultipartFile;
 
 import com.dojo.mvc.data.viz.proj.models.Brand;
 import com.dojo.mvc.data.viz.proj.models.Department;
@@ -20,6 +19,9 @@ import com.dojo.mvc.data.viz.proj.repository.BrandRepo;
 import com.dojo.mvc.data.viz.proj.repository.DepartmentRepo;
 import com.dojo.mvc.data.viz.proj.repository.SaleRepo;
 import com.dojo.mvc.data.viz.proj.repository.SubDepartmentRepo;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.stream.JsonWriter;
 
 
 
@@ -148,6 +150,72 @@ public class UniversalService {
 	}
 	public List<Brand> findBrands() {
 		return brandRepo.findAll();
+	}
+	
+
+	public void createJSON(boolean prettyPrint) {	
+		JsonWriter jsonWriter = null;
+		
+		try {
+		    jsonWriter = new JsonWriter(new FileWriter("test.json"));
+		    jsonWriter.beginObject();
+		    Department department = this.deptRepo.findByDepartmentNumber("50");
+		    
+		    jsonWriter.name("name").value(department.getDepartmentNumber()+" "+department.getName());
+		    jsonWriter.name("children");
+		    jsonWriter.beginArray();
+		     
+		    
+//		    For each sub-dept create an array of objects
+		    
+		    List<SubDepartment> sub = this.subRepo.findAll();
+		    
+		    for(SubDepartment s : sub) {
+		    	jsonWriter.beginObject();
+		    	jsonWriter.name("name").value(s.getName());
+		    	jsonWriter.name("children");
+		    	 jsonWriter.beginArray();
+		    	 
+		    	 List<Brand> brand = this.brandRepo.findAllWithBrandsItemsNotNull(s.getId(),department.getId());
+		    	 for(Brand b : brand) {
+		    		 jsonWriter.beginObject();
+		    		 jsonWriter.name("name").value(b.getName());
+		    		 jsonWriter.name("children");
+		    		 jsonWriter.beginArray();
+		    		 
+		    		 List<Sale> salesList = this.saleRepo.findAll(b.getId());
+		    		 
+		    		 for(Sale sale : salesList) {
+		    			 jsonWriter.beginObject();
+		    			 jsonWriter.name("sku").value(sale.getSku_number());
+		    			 jsonWriter.name("name").value(sale.getName());
+		    			 jsonWriter.name("sales").value(sale.getAmount());
+		    			 jsonWriter.name("unites").value(sale.getQuantity());
+		    			 jsonWriter.endObject();
+		    		 }
+		    		 jsonWriter.endArray();
+		    		 jsonWriter.endObject();
+		    		 
+		    	 }
+		    	 jsonWriter.endArray();
+		    	 jsonWriter.endObject();
+		    }
+		    jsonWriter.endArray();
+		    jsonWriter.endObject();
+	
+		    
+		} catch (IOException e) {
+
+		}finally{
+		    try {
+		        jsonWriter.close();
+		    } catch (IOException e) {
+
+		    }
+		}
+		
+		
+//		System.out.println("salesList"+salesList.size());
 	}
 }
 

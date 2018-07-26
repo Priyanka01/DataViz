@@ -31,15 +31,15 @@ public class UploadFile {
 	
 	@RequestMapping("/load")
 	public String uploadOneFile() {
-//		UniversalService.createJSON(true);
+		this.uservice.createJSON(true);
 		return "/views/index.jsp";
 	}
 
-//	
-//	@RequestMapping("/loadClickable")
-//	public String uploadFile() {
-//		return "/views/Clickable.jsp";
-//	}
+	
+	@RequestMapping("/loadClickable")
+	public String uploadFile() {
+		return "/views/Clickable.jsp";
+	}
 //	
 //	@RequestMapping(value="/upload",method=RequestMethod.POST)
 //	public String receiveFile(@RequestParam("file") MultipartFile file,@RequestParam("description")String description) throws IOException {
@@ -69,6 +69,7 @@ public class UploadFile {
 //           File newFile = (File) file;
 //           UploadFile.parseToCSV(file);
            File newfile = convert(file);
+           System.out.println("File"+newfile);
            uservice.CSVtoDB(newfile);
 		}
 		return "redirect:/load";
@@ -91,6 +92,8 @@ public class UploadFile {
 		}
 		return convFile;
 	}
+	
+	
 }
 
 
