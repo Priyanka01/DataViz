@@ -137,7 +137,10 @@
 				//Draw each circle
 				chosenContext.beginPath();
 				chosenContext.arc((centerX + +node.attr("cx")), (centerY + +node.attr("cy")), node.attr("r"), 0,  2 * Math.PI, true);
-				chosenContext.fill();
+				chosenContext.fill(); 
+				chosenContext.fillStyle ="red";
+				/* chosenContext.fillText("brand name",(centerX + +node.attr("cx")) -  node.attr("r")/4,(centerY + +node.attr("cy")) - node.attr("r")/2); */
+ 
 				chosenContext.closePath();
 				
 			  })
