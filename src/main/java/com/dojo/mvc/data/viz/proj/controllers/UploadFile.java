@@ -60,8 +60,6 @@ public class UploadFile {
 	public String receiveFile(@RequestParam("file") MultipartFile file,@RequestParam("description")String description) throws IOException {
 		if (!file.isEmpty()) {
            System.out.println("File"+ description);
-//           File newFile = (File) file;
-//           UploadFile.parseToCSV(file);
            File newfile = convert(file);
            System.out.println("File"+newfile);
            uservice.CSVtoDB(newfile);
