@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 
 import com.dojo.mvc.data.viz.proj.models.Brand;
@@ -19,8 +18,6 @@ import com.dojo.mvc.data.viz.proj.repository.BrandRepo;
 import com.dojo.mvc.data.viz.proj.repository.DepartmentRepo;
 import com.dojo.mvc.data.viz.proj.repository.SaleRepo;
 import com.dojo.mvc.data.viz.proj.repository.SubDepartmentRepo;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
 import com.google.gson.stream.JsonWriter;
 
 
@@ -122,24 +119,24 @@ public class UniversalService {
 					sale.setSubdepartment(subDept);
 					saleRepo.save(sale);
 					
-//					for(int k = 0; k < brandList.size(); k++) {
-//						String name = brandList.get(k).getName().toUpperCase();
-//						String test = "BLAKE";
-//						name = name.replaceAll("\\s","");
-//						name = name.replaceAll("II","");
-//						if(check.contains(name) == true) {
-//							sale.setBrand(brandList.get(k));
-//							brandRepo.save(brandList.get(k));
-//							if(subDept.getBrands().contains(brandList.get(k)) == false) {
-//								subDept.addBrand(brandList.get(k));
-//								subRepo.save(subDept);
-//							}
-//							flag = true;
-//						}
-//						if (flag = false) {
-//							notMapped.add(sale);
-//						}
-//					}
+					for(int k = 0; k < brandList.size(); k++) {
+						String name = brandList.get(k).getName().toUpperCase();
+						String test = "BLAKE";
+						name = name.replaceAll("\\s","");
+						name = name.replaceAll("II","");
+						if(check.contains(name) == true) {
+							sale.setBrand(brandList.get(k));
+							brandRepo.save(brandList.get(k));
+							if(subDept.getBrands().contains(brandList.get(k)) == false) {
+								subDept.addBrand(brandList.get(k));
+								subRepo.save(subDept);
+							}
+							flag = true;
+						}
+						if (flag = false) {
+							notMapped.add(sale);
+						}
+					}
 				}	
 			}
 			
@@ -180,6 +177,16 @@ public class UniversalService {
 		    	 
 		    	 List<Brand> brand = this.brandRepo.findAllWithBrandsItemsNotNull(s.getId(),department.getId());
 		    	 for(Brand b : brand) {
+		    		 int count = 0 ;
+		    		 List<Sale> l = saleRepo.findByBrand(b);
+		    		 for(Sale sl : l) {
+		    			 if(sl.getAmount() == 0) {
+		    				 count++;
+		    			 }
+		    		 }
+		    		 if(count >= l.size()) {
+		    			continue;
+		    		 }
 		    		 jsonWriter.beginObject();
 		    		 jsonWriter.name("name").value(b.getName());
 		    		 jsonWriter.name("children");
@@ -188,6 +195,9 @@ public class UniversalService {
 		    		 List<Sale> salesList = this.saleRepo.findAllByBrandAndSubDept(b.getId(),s.getId(),department.getId());
 		    		 
 		    		 for(Sale sale : salesList) {
+		    			 if(sale.getAmount() == 0) {
+		    				 salesList.remove(sale);
+		    			 }
 		    			 jsonWriter.beginObject();
 		    			 jsonWriter.name("sku").value(sale.getSku_number());
 		    			 jsonWriter.name("name").value(sale.getName());

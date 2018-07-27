@@ -20,7 +20,7 @@
 	<div id="chart"></div>
 	<script>
 		queue() 
-			.defer(d3.json, "click.json")
+			.defer(d3.json, "test.json")
 			.await(drawAll);
 			
 		function drawAll(error, dataset) {

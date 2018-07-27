@@ -30,15 +30,19 @@ public class UploadFile {
 	}
 
 	
-	@RequestMapping("/loadClickable")
-	public String uploadFile() {
-		return "/views/Clickable.jsp";
-	}
-	
+//	@RequestMapping("/loadClickable")
+//	public String uploadFile() {
+//		return "/views/Clickable.jsp";
+//	}
+//	
+//	@RequestMapping("/loadBarChart")
+//	public String displayBarChart() {
+//		return "/views/BarChart.jsp";
+//	}
 	
 	@RequestMapping("/loadZoomMap")
 	public String displayZoom() {
-		this.uservice.createJSON(true);
+//		this.uservice.createJSON(true);
 		return "/views/Clickable2.jsp";
 	}
 	
