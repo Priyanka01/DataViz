@@ -44,55 +44,43 @@ public class Brand {
 		return id;
 	}
 
-
 	public void setId(Long id) {
 		this.id = id;
 	}
-
 
 	public String getName() {
 		return name;
 	}
 
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
 
 	public Double getSale() {
 		return sale;
 	}
 
-
 	public void setSale(Double sale) {
 		this.sale = sale;
 	}
-
 
 	public List<SubDepartment> getSubDepts() {
 		return subDepts;
 	}
 
-
 	public void setSubDepts(List<SubDepartment> subDepts) {
 		this.subDepts = subDepts;
 	}
 
-
 	public List<Sale> getSales() {
 		return sales;
 	}
-
 
 	public void setSales(List<Sale> sales) {
 		this.sales = sales;
 	}
 
 	public void addSale(Sale e) {
-		this.sales.add(e);
-		
+		this.sales.add(e);		
 	}
-
-
 }

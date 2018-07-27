@@ -7,9 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 import org.springframework.stereotype.Service;
-
 import com.dojo.mvc.data.viz.proj.models.Brand;
 import com.dojo.mvc.data.viz.proj.models.Department;
 import com.dojo.mvc.data.viz.proj.models.Sale;
@@ -19,8 +17,6 @@ import com.dojo.mvc.data.viz.proj.repository.DepartmentRepo;
 import com.dojo.mvc.data.viz.proj.repository.SaleRepo;
 import com.dojo.mvc.data.viz.proj.repository.SubDepartmentRepo;
 import com.google.gson.stream.JsonWriter;
-
-
 
 @Service
 public class UniversalService {
@@ -36,7 +32,6 @@ public class UniversalService {
 		this.saleRepo = saleRepo;
 		
 	}
-
 	
 	//CSV PARSE TO DATABASE
 	public List<Sale> CSVtoDB(File file) {
@@ -44,8 +39,10 @@ public class UniversalService {
 		try {
 			Scanner inputStream = new Scanner(file);
 			String splitter = ",";
+			
 			//Initializes csv array list
 			ArrayList<String[]> items = new ArrayList<String[]>();
+			
 			//goes through csv 
 			while(inputStream.hasNext()) {
 				//while loop incrementer
@@ -72,25 +69,29 @@ public class UniversalService {
 			Integer count = 0;
 			for(int i = 0; i < items.size(); i++) {
 				count ++;
-//				System.out.println(count);
 				if(items.get(i).length == 1) {
+					
 					//Get Department ID
 					depo = items.get(i)[0].substring(0, 2);
 					department = deptRepo.findByDepartmentNumber(depo);
 
 					//Get SubDepartment ID
 					subDepo = items.get(i)[0].substring(3, 5);
+					
 					//find if sub department exists
 					sub = subRepo.findBySubNo(subDepo);
+					
 					//create a new subDepartment if it doesnt
 					if (sub == null) {
 						SubDepartment subDepartment = new SubDepartment(subDepo, items.get(i)[0].substring(6), department);
 						subDept = subRepo.save(subDepartment);
+						
 						//add new subDepartment to department
 						department.addSubDept(subDept);
 						deptRepo.save(department);
 					}else {
 						subDept = sub;
+						
 						//add new subDepartment to department
 						if(department.getSubDepts().contains(subDept) == false) {
 							department.addSubDept(subDept);
@@ -141,7 +142,6 @@ public class UniversalService {
 			}
 			
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return notMapped;
@@ -152,6 +152,7 @@ public class UniversalService {
 	}
 	
 
+	/* Fetch data from database and make json file with required format*/ 
 	public void createJSON(boolean prettyPrint) {	
 		JsonWriter jsonWriter = null;
 		
@@ -164,8 +165,6 @@ public class UniversalService {
 		    jsonWriter.name("children");
 		    jsonWriter.beginArray();
 		     
-		    
-//		    For each sub-dept create an array of objects
 		    
 		    List<SubDepartment> sub = this.subRepo.findAll();
 		    
@@ -225,9 +224,6 @@ public class UniversalService {
 
 		    }
 		}
-		
-		
-//		System.out.println("salesList"+salesList.size());
 	}
 }
 

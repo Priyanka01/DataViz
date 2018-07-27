@@ -47,8 +47,6 @@ public class Sale {
 
 	}
 	
-	
-
 	public Long getId() {
 		return id;
 	}
@@ -115,8 +113,4 @@ public class Sale {
 	public void setSubdepartment(SubDepartment subdepartment) {
 		this.subdepartment = subdepartment;
 	}
-
-
-
-
 }

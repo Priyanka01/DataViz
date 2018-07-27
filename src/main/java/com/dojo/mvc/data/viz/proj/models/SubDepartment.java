@@ -48,7 +48,6 @@ public class SubDepartment {
 		this.subNo = sub;
 		this.department = depo;
 	}
-
 	
 	public Long getId() {
 		return id;
@@ -99,6 +98,4 @@ public class SubDepartment {
 	public void setSales(List<Sale> sales) {
 		this.sales = sales;
 	}
-	
-
 }

@@ -93,13 +93,10 @@ public class UploadFile {
 	    fos.close(); 
 	    return convFile;
 	    } catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return convFile;
-	}
-	
-	
+	}	
 }
 
 

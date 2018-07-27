@@ -55,12 +55,10 @@ function handleMouseOver(d) {  // Add interactivity
 
 	console.log("ouch");
 
-  }
-  
+  } 
 function handleMouseOut(d){
 	
 }
-
 --%>
 
 var svg = d3.select("svg"),
