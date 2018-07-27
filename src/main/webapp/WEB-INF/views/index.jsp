@@ -7,10 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<a href="/loadZoomMap">Zoom Map</a>
 </body>
 <style>
-
+svg{
+	margin-right: auto;
+	margin-left: auto;
+	display: table;
+	
+}
 circle {
   fill: rgb(31, 119, 180);
   fill-opacity: .25;

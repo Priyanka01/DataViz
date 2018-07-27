@@ -100,44 +100,44 @@ public class UniversalService {
 				}
 			
 				}else {
-					if(items.get(i).length >= 6){
-						String edit = items.get(i)[3].concat(items.get(i)[4]);
-						edit = edit.replaceAll("\"", "");
-						edit = edit.replace("$", "");
-						Integer totalSale = Integer.parseInt(edit);
-						Sale item = new Sale(items.get(i)[0], items.get(i)[1] , Integer.parseInt(items.get(i)[05]), totalSale);
-						sale = saleRepo.save(item);
-					}if(items.get(i).length == 5) {
-						String edit = items.get(i)[3];
-						edit = edit.replaceAll("\"", "");
-						edit = edit.replace("$", "");
-						Integer totalSale = Integer.parseInt(edit);
-							Sale item = new Sale(items.get(i)[0], items.get(i)[1] , Integer.parseInt(items.get(i)[04]), totalSale);
-							sale = saleRepo.save(item);
-					}
-					String check = items.get(i)[1];
-					Boolean flag = false;
-					sale.setSubdepartment(subDept);
-					saleRepo.save(sale);
-					
-					for(int k = 0; k < brandList.size(); k++) {
-						String name = brandList.get(k).getName().toUpperCase();
-						String test = "BLAKE";
-						name = name.replaceAll("\\s","");
-						name = name.replaceAll("II","");
-						if(check.contains(name) == true) {
-							sale.setBrand(brandList.get(k));
-							brandRepo.save(brandList.get(k));
-							if(subDept.getBrands().contains(brandList.get(k)) == false) {
-								subDept.addBrand(brandList.get(k));
-								subRepo.save(subDept);
-							}
-							flag = true;
-						}
-						if (flag = false) {
-							notMapped.add(sale);
-						}
-					}
+//					if(items.get(i).length >= 6){
+//						String edit = items.get(i)[3].concat(items.get(i)[4]);
+//						edit = edit.replaceAll("\"", "");
+//						edit = edit.replace("$", "");
+//						Integer totalSale = Integer.parseInt(edit);
+//						Sale item = new Sale(items.get(i)[0], items.get(i)[1] , Integer.parseInt(items.get(i)[05]), totalSale);
+//						sale = saleRepo.save(item);
+//					}if(items.get(i).length == 5) {
+//						String edit = items.get(i)[3];
+//						edit = edit.replaceAll("\"", "");
+//						edit = edit.replace("$", "");
+//						Integer totalSale = Integer.parseInt(edit);
+//							Sale item = new Sale(items.get(i)[0], items.get(i)[1] , Integer.parseInt(items.get(i)[04]), totalSale);
+//							sale = saleRepo.save(item);
+//					}
+//					String check = items.get(i)[1];
+//					Boolean flag = false;
+//					sale.setSubdepartment(subDept);
+//					saleRepo.save(sale);
+//					
+//					for(int k = 0; k < brandList.size(); k++) {
+//						String name = brandList.get(k).getName().toUpperCase();
+//						String test = "BLAKE";
+//						name = name.replaceAll("\\s","");
+//						name = name.replaceAll("II","");
+//						if(check.contains(name) == true) {
+//							sale.setBrand(brandList.get(k));
+//							brandRepo.save(brandList.get(k));
+//							if(subDept.getBrands().contains(brandList.get(k)) == false) {
+//								subDept.addBrand(brandList.get(k));
+//								subRepo.save(subDept);
+//							}
+//							flag = true;
+//						}
+//						if (flag = false) {
+//							notMapped.add(sale);
+//						}
+//					}
 				}	
 			}
 			

@@ -13,7 +13,14 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
-
+svg{
+	margin-right: auto;
+	margin-left: auto;
+	display: table;
+	margin-top: 50px;
+	border-radius: 50px;
+	
+}
 .node {
   cursor: pointer;
 }
@@ -73,7 +80,7 @@ var svg = d3.select("svg"),
 ////////////////////////////////////////////////////////
 var color = d3.scaleLinear()
     .domain([-1, 5])
-    .range(["hsl(0,0%,70%)", "hsl(0,0%,15%)"])
+    .range(["hsl(246,35%,91%)", "hsl(344,54%,36%)"])
     .interpolate(d3.interpolateHcl);
 
 var pack = d3.pack()
@@ -163,6 +170,6 @@ function hovered(hover) {
 --%>
 </script>
 <body>
-	
+	<a href="/load">Static Map</a>
 </body>
 </html>
