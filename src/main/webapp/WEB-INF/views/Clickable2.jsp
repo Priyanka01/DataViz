@@ -118,7 +118,7 @@ d3.json("test.json", function(error, root) {
   var node = g.selectAll("circle,text");
   
   node.append("title")
-  .text(function(d) { return d.data.name + "\n" + "$"+ d.value; });
+  .text(function(d) { return d.data.name + "\n" + "$"+ (d.value).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,'); });
 
 	
   //node.append("circle")
