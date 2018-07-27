@@ -41,7 +41,7 @@ var svg = d3.select("svg"),
 var pack = d3.pack()
     .size([diameter - 4, diameter - 4]);
 
-d3.json("flare.json", function(error, root) {
+d3.json("test.json", function(error, root) {
   if (error) throw error;
 
   root = d3.hierarchy(root)

@@ -14,6 +14,9 @@
 <meta charset="utf-8">
 <style>
 
+body{ background-color: white; }
+#canvas{border:1px solid red; margin:0 auto; }
+
 .node {
   cursor: pointer;
 }
@@ -39,7 +42,7 @@
   pointer-events: none;
 }
 
-
+<canvas id="canvas" width=300 height=300></canvas>
 </style>
 <svg width="960" height="960"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -121,7 +124,8 @@ d3.json("test.json", function(error, root) {
   
   node.append("title")
   .text(function(d) { return d.data.name + "\n" + "$"+ d.value; });
-
+  
+  
 	
   //node.append("circle")
   //		.attr("r", function(d){return d.r})
