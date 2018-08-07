@@ -25,6 +25,11 @@ Tools used:
   - JSON is an input to d3js 
   - d3js makes the graphs based on data.
   
+  Future enhancements:
+  - Integrate graph within a zoomable and clickable graph to display yearly comparision of particular brands earnings.
+  - Expand to all departments.
+  - Modify SQL queries to fetch only brands with sales in it. 
+  
   *Scope is restricted to furniture department.
  
  
